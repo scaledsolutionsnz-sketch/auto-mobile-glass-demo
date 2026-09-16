@@ -24,6 +24,7 @@
 - [x] GitHub repository created and pushed: https://github.com/scaledsolutionsnz-sketch/auto-mobile-glass-demo
 - [x] Production deployment: https://auto-mobile-glass-demo.vercel.app
 - [x] Live HTTP smoke checks saved in `verification/live-smoke.json`.
+- [x] Live mobile smoke check: 375px, zero forms, zero horizontal overflow and ten FAQ entries.
 
 ## Verified brief
 
