@@ -19,6 +19,12 @@
 - [ ] Client-owned 4K workshop/team photos and logo: pending delivery
 - [ ] Final FAQ, insurance, WOF, warranty and equipment sign-off: pending Conrad
 
+## Deployment
+
+- [x] GitHub repository created and pushed: https://github.com/scaledsolutionsnz-sketch/auto-mobile-glass-demo
+- [x] Production deployment: https://auto-mobile-glass-demo.vercel.app
+- [x] Live HTTP smoke checks saved in `verification/live-smoke.json`.
+
 ## Verified brief
 
 Business: Auto Mobile Glass

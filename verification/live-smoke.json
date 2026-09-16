@@ -1,0 +1,57 @@
+{
+  "url": "https://auto-mobile-glass-demo.vercel.app",
+  "checks": [
+    [
+      "index.html",
+      200,
+      11160
+    ],
+    [
+      "terms.html",
+      200,
+      1010
+    ],
+    [
+      "privacy.html",
+      200,
+      1064
+    ],
+    [
+      "styles.css",
+      200,
+      4463
+    ],
+    [
+      "site.js",
+      200,
+      200
+    ],
+    [
+      "robots.txt",
+      200,
+      342
+    ],
+    [
+      "llms.txt",
+      200,
+      630
+    ],
+    [
+      "sitemap.xml",
+      200,
+      286
+    ],
+    [
+      "forms",
+      0
+    ],
+    [
+      "faqs",
+      10
+    ],
+    [
+      "service_pages",
+      2
+    ]
+  ]
+}
