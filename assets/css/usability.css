@@ -1,0 +1,58 @@
+/* Header stays visible without scroll-dependent resizing. */
+html{scroll-padding-top:96px}
+body>header{position:sticky;top:0;z-index:1000;height:80px}
+body>header .header{position:relative!important;top:0;z-index:1000;transition:none;background:#0c1724!important}
+.header .header-1,.header.active .header-1{display:none!important}
+.header .header-2,.header.active .header-2{height:80px;padding:0 5%;background:#0c1724!important}
+.header .logo img{width:230px!important;max-height:64px;object-fit:contain}
+.header .navbar .nav-btn{font-size:16px}
+.header .btn{font-size:15px}
+.amg-home .home{height:auto;min-height:0;padding:0;background:#0c1724;isolation:isolate}
+.amg-home .home-slider,.amg-home .home-item{height:min(calc(100svh - 80px),66.6875vw);min-height:0}
+.amg-home .home-item>img{height:100%;width:100%;object-fit:contain;display:block}
+.amg-home .home-item>img.hide-one{display:none}
+.amg-home .home-item .content{height:100%;padding:0 10%;align-items:center;background:linear-gradient(transparent,rgba(0,0,0,.28) 50%,transparent)}
+.amg-home .home-item .content .text{width:760px;max-width:100%}
+.amg-home .home-item .content h3{font-size:clamp(28px,3.2vw,48px);font-weight:600;line-height:1.15;margin-bottom:18px}
+.amg-home .home-item .content p{font-size:17px}
+.amg-home .home-slider .swiper-button-next::after,.amg-home .home-slider .swiper-button-prev::after{font-size:32px}
+.amg-home .hero-review-rail{position:absolute;left:24px;bottom:24px;z-index:8;width:350px;max-width:calc(100% - 48px);padding:16px 18px;border:1px solid rgba(255,255,255,.38);border-radius:20px;background:rgba(12,23,36,.36);backdrop-filter:blur(10px);box-shadow:none;color:#fff}
+.bubble-heading{display:flex;align-items:center;gap:9px;font-size:13px;font-weight:600;margin-bottom:9px}.bubble-heading i{font-size:18px}.review-pause{margin-left:auto;background:transparent;color:#fff;border:1px solid rgba(255,255,255,.5);border-radius:20px;padding:5px 10px;font-size:12px;cursor:pointer}
+.bubble-track{display:grid}.hero-review-item,.hero-review-item.is-active{grid-area:1/1;display:block;visibility:hidden;opacity:0;transition:opacity .3s}.hero-review-item.is-active{visibility:visible;opacity:1}.hero-review-item p{font-size:14px;line-height:1.5;margin:0 0 8px}.hero-review-item strong{font-size:12px;color:#fff}.hero-review-stars{font-size:14px}
+.amg-home .about>.box-container{display:grid;grid-template-columns:1fr 1fr;min-height:0;align-items:stretch;gap:40px}
+.amg-home .about .box-container>img{width:100%;height:auto!important;object-fit:contain;display:block;transform:none}
+.amg-home .about .content{position:static;height:auto;max-width:none;padding:30px!important;clip-path:none!important;-webkit-clip-path:none!important;display:block}
+.amg-home .about .content h3{font-size:clamp(28px,3vw,40px);line-height:1.2}.amg-home .about .content p{font-size:17px;line-height:1.7}.amg-home .about .heading{display:none}
+.amg-home .blog.main>.heading{max-width:1240px;margin:0 auto 40px;text-align:left}
+.amg-home .blog.main .heading>span{font-family:'Poppins',Arial,sans-serif!important;font-size:clamp(26px,3vw,40px)!important;font-weight:600;letter-spacing:0!important;line-height:1.25}
+.amg-home .blog.main .heading h2{font-size:clamp(30px,4vw,48px)}
+.amg-home .blog .box-container{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:start;gap:24px}
+.feature-disclosure{border:1px solid #4a4d53;background:#292c31;box-shadow:none}.feature-disclosure summary{list-style:none;cursor:pointer}.feature-disclosure summary::-webkit-details-marker{display:none}.feature-disclosure .image{height:auto;aspect-ratio:1.6}.feature-title{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:20px;color:#fff;font-size:20px;font-weight:600;line-height:1.3}.feature-toggle{font-size:25px;color:#afcffb}.feature-disclosure[open] .feature-toggle{transform:rotate(45deg)}.feature-body{padding:0 20px 24px}.feature-body p{font-size:16px;line-height:1.65;color:#e4e7ec;margin-bottom:18px}.feature-body a{font-size:15px;color:#b4d4ff;text-decoration:underline}
+.amg-home .services{padding-top:64px!important;padding-bottom:64px!important}.amg-home .services>.heading{max-width:1240px;margin:0 auto 32px}.amg-home .services .box-container{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.amg-home .service-item{display:flex;flex-direction:column-reverse;align-items:flex-start;justify-content:flex-end;padding:30px;background:#2b2e34;border:1px solid #50555e;box-shadow:none;gap:24px}.amg-home .service-item .content{width:100%}.amg-home .service-item .content h3{color:#fff;font-size:25px;line-height:1.4}.amg-home .service-item .content a:hover h3{color:#bad7ff}.amg-home .service-item .content p{color:#e0e5ed;font-size:18px;line-height:1.65;padding-top:16px}.amg-home .service-item>i{position:static;font-size:24px;padding:16px;background:#24589b;color:#fff}
+.amg-home .home-testimonial{padding-top:64px!important}.amg-home .home-testimonial .heading{margin-bottom:36px}.amg-home .review-heading>span{font-family:Arial,sans-serif;font-size:14px;letter-spacing:.05em}.google-rating-line small{font-size:15px}.google-rating-line strong{font-size:26px}.google-rating-line .google-stars{font-size:22px}.review-all-link{font-size:15px}
+.reviews-list{max-width:1240px;margin:auto}.reviews-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 40px}.review-panel{padding:28px 0;border-top:1px solid #575b64;background:transparent;min-width:0;display:flex;flex-direction:column;align-items:flex-start;text-align:left}.review-panel .review-card-top{font-size:14px;color:#cbd5e3;margin:0 0 14px;gap:10px}.review-panel .review-card-top i{font-size:20px;color:#a9c8f5}.review-panel>i{display:none}.amg-home .review-panel .google-stars{font-size:18px;margin-bottom:16px}.review-panel>p{font-size:20px;line-height:1.65;color:#f2f4f8;margin-bottom:22px}.review-panel .text{margin-top:auto}.review-panel h4{font-family:'Poppins',Arial,sans-serif;font-size:18px;color:#fff;font-weight:600}.review-panel h6{font-family:Arial,sans-serif;font-size:13px;color:#c1cad7;line-height:1.5}.review-panel .read-google{font-size:14px;margin-top:14px}
+summary:focus-visible,.review-pause:focus-visible{outline:3px solid #aecfff;outline-offset:4px}
+@media(max-width:1000px){.amg-home .about>.box-container{grid-template-columns:1fr}.amg-home .blog .box-container,.amg-home .services .box-container{grid-template-columns:1fr}.amg-home .service-item{padding:28px}.header .logo img{width:190px!important}}
+@media(max-width:700px){body>header{height:72px}.header .header-2,.header.active .header-2{height:72px;padding:0 16px}.header .logo img{width:150px!important;max-height:55px}.header .logo{flex:1}.amg-home .home-slider,.amg-home .home-item{height:auto;min-height:0}.amg-home .home-item>img{height:auto;aspect-ratio:1600/1067;object-fit:contain}.amg-home .home-item .content{position:relative;height:auto;min-height:225px;padding:24px 48px;align-items:center;background:#0c1724}.amg-home .home-item .content h3{font-size:26px}.amg-home .home-item .content p{font-size:15px}.amg-home .text-hide a{display:inline-block}.amg-home .hero-review-rail{position:relative;left:auto;bottom:auto;margin:0 auto;width:calc(100% - 32px);max-width:460px;background:rgba(255,255,255,.06)}.amg-home .home{padding-bottom:24px}.amg-home .home-slider .swiper-button-next,.amg-home .home-slider .swiper-button-prev{top:30vw}.amg-home .about .content{padding:24px!important}.reviews-grid{grid-template-columns:1fr}.review-panel>p{font-size:18px}.amg-home .home-item .content .text{width:100%}.amg-home .about,.amg-home .blog.main,.amg-home .services,.amg-home .home-testimonial{padding:48px 20px!important}.review-all-link{position:static;display:inline-block;margin-top:20px}}
+@media(prefers-reduced-motion:reduce){.hero-review-item{transition:none}}
+/* Fixed positioning also works when the legacy page sets overflow on the body. */
+body>header{position:relative;height:80px}
+body>header .header{position:fixed!important;top:0;left:0;width:100%;z-index:1000}
+@media(max-width:700px){body>header{height:72px}}
+/* Fill the hero edge to edge; favour the team in the lower part of the photo. */
+.amg-home .home-item>img{object-fit:cover;object-position:center 75%}
+@media(max-width:700px){.amg-home .home-item>img{object-fit:contain;object-position:center}}
+
+/* A brief branded arrival, with a bounded wait and reduced-motion support. */
+.site-loader{position:fixed;inset:0;z-index:10000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;background:#0c1724;opacity:1;transition:opacity .3s ease}
+.site-loader[hidden]{display:none}
+.site-loader img{width:clamp(200px,45vw,320px);height:auto;object-fit:contain}
+.site-loader-track{width:120px;height:3px;overflow:hidden;background:rgba(255,255,255,.15);border-radius:3px}
+.site-loader-track::after{content:"";display:block;width:50%;height:100%;background:#a9c8f5;animation:loader-progress 1s ease-in-out infinite alternate}
+.site-loader.is-loaded{opacity:0;pointer-events:none}
+@keyframes loader-progress{from{transform:translateX(-100%)}to{transform:translateX(200%)}}
+@media(prefers-reduced-motion:reduce){.site-loader{transition:none}.site-loader-track::after{animation:none;width:100%}}
+
+.amg-home .about-photo{position:relative;min-width:0;min-height:0}
+.amg-home .about-photo img{position:absolute;inset:0;width:100%;height:100%!important;object-fit:cover;object-position:72% center;display:block}
+@media(max-width:1000px){.amg-home .about-photo img{position:static;height:auto!important;object-fit:contain}}

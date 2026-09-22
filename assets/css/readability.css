@@ -1,0 +1,22 @@
+/* Consistent readable text without changing the legacy rem-based layout. */
+body{font-size:18px}
+p,li,label,input,textarea,select{font-size:18px!important;line-height:1.65}
+a,button,summary{font-size:max(16px,1em)}
+.btn,.amg-contact-button,.amg-hero-primary,.amg-hero-phone{font-size:17px!important}
+.amg-section-kicker,.amg-hero-eyebrow,.amg-hero-rating-caption,.amg-hero-photo figcaption,small,.review-panel h6,.review-card-top,.read-google,.review-all-link,.bubble-heading,.hero-review-item strong,.review-pause{font-size:16px!important;line-height:1.5}
+.amg-faq-grid summary{font-size:22px;line-height:1.4}
+.amg-contact-section p{font-size:18px;line-height:1.7}
+.amg-contact-actions{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0}
+.amg-contact-actions .amg-contact-button{margin:0;display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:12px 20px}
+.amg-contact-email{background:transparent;border:1px solid #a9c8f5;color:#c5ddff}
+.amg-contact-email:hover{background:#28599a;color:white}
+.amg-contact-actions a:focus-visible{outline:3px solid #a9c8f5;outline-offset:4px}
+.amg-contact-details a{overflow-wrap:anywhere}
+.footer .box-container .box a,.footer .credit{font-size:16px!important;line-height:1.6}
+@media(max-width:760px){.amg-faq-grid summary{font-size:20px}p,li,label,input,textarea,select{font-size:17px!important}}
+.amg-faq-section h2,.amg-contact-section h2{font-size:clamp(32px,4vw,50px);line-height:1.15}
+/* Consistent FAQ rows, including questions that wrap onto two lines. */
+.amg-faq-section .amg-faq-grid{align-items:stretch;gap:16px}
+.amg-faq-grid summary{display:flex;align-items:center;min-height:112px;box-sizing:border-box}
+.amg-faq-grid summary:after{top:50%;transform:translateY(-50%)}
+@media(max-width:760px){.amg-faq-grid summary{min-height:104px}}

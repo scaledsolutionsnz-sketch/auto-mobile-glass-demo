@@ -1,0 +1,24 @@
+/* Light blue accents complement the original navy branding. */
+:root{--amg-sky:#82c5f4;--amg-sky-bright:#b6e0ff;--amg-sky-border:rgba(130,197,244,.38)}
+.header,header{border-bottom-color:var(--amg-sky-border)}
+.amg-hero-eyebrow,.amg-section-kicker,.heading>span{color:var(--amg-sky)!important}
+.amg-hero-primary,.amg-contact-button:not(.amg-contact-email),.header .btn,header .btn{background:var(--amg-sky);border-color:var(--amg-sky);color:#0c2235}
+.amg-hero-primary:hover,.amg-contact-button:not(.amg-contact-email):hover,.header .btn:hover,header .btn:hover{background:var(--amg-sky-bright);border-color:var(--amg-sky-bright);color:#0c2235}
+.navbar .nav-btn:hover,.navbar .nav-btn:focus-visible,.amg-hero-phone:hover,.amg-contact-details a,.read-google,.review-all-link{color:var(--amg-sky)!important}
+.amg-hero-phone{text-decoration-color:var(--amg-sky);text-decoration-thickness:2px}
+.amg-hero-rating{border-left:3px solid var(--amg-sky);padding-left:16px}
+.heading h2:after,.amg-faq-section h2:after,.amg-contact-section h2:after{content:"";display:block;width:54px;height:3px;background:var(--amg-sky);margin-top:20px}
+.heading h2:after{margin-left:auto;margin-right:auto}
+.amg-info-tab,.amg-faq-grid details{border-color:var(--amg-sky-border);transition:border-color .2s,background-color .2s}
+.amg-info-tab>summary:hover,.amg-faq-grid summary:hover{color:var(--amg-sky-bright);background:rgba(130,197,244,.06)}
+.amg-info-tab[open],.amg-faq-grid details[open]{border-color:var(--amg-sky);border-left:3px solid var(--amg-sky)}
+.amg-info-tab[open]>summary,.amg-faq-grid details[open]>summary,.amg-info-tab>summary:after,.amg-faq-grid summary:after{color:var(--amg-sky)}
+.amg-info-tab[open]>summary{background:rgba(130,197,244,.07);border-bottom-color:var(--amg-sky-border)}
+.feature-disclosure{border-top:3px solid var(--amg-sky)}
+.feature-disclosure summary:after{color:var(--amg-sky)}
+.amg-contact-email{border-color:var(--amg-sky);color:var(--amg-sky-bright)}
+.amg-contact-email:hover{background:rgba(130,197,244,.12);color:var(--amg-sky-bright)}
+.amg-contact-section{border-top-color:var(--amg-sky-border)}
+.footer{border-top:1px solid var(--amg-sky-border)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--amg-sky);outline-offset:4px}
+::selection{background:var(--amg-sky);color:#0c2235}
