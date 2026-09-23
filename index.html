@@ -360,7 +360,7 @@ html{scroll-padding-top:110px}.amg-info-tab{background:#25282d;border:1px solid 
 <!-- ==================== Header Area (End) ==================== -->
 <!-- ==================== Home-Slider Area (Start) ==================== -->
 <section aria-labelledby="hero-title" id="amg-new-hero">
-<figure id="amg-new-hero-figure"><img alt="The Auto Mobile Glass team alongside their service vans" fetchpriority="high" height="619" src="assets/images/Home/amg-team-banner.jpg" width="1600"/></figure>
+<div id="amg-new-hero-bg"><img alt="The Auto Mobile Glass team alongside their service vans" fetchpriority="high" height="619" src="assets/images/Home/amg-team-banner.jpg" width="1600"/></div>
 <div id="amg-new-hero-copy">
 <p class="amg-hero-eyebrow">Auto Mobile Glass · Northland</p>
 <h1 id="hero-title">Windscreen repair. Replacement. Done right.</h1>
@@ -368,25 +368,26 @@ html{scroll-padding-top:110px}.amg-info-tab{background:#25282d;border:1px solid 
 <div id="amg-new-hero-actions">
 <a class="amg-hero-primary" href="#contact-section">Get in touch <span aria-hidden="true">↗</span></a>
 <a class="amg-hero-phone" href="tel:0800367264">Call 0800 367 264</a>
+</div>
 <a aria-label="Read our Google reviews: rated 4.9 from 162 reviews" id="amg-new-hero-rating" href="#reviews">
 <i aria-hidden="true" class="fab fa-google"></i><span><strong>4.9 <span aria-hidden="true" class="amg-hero-stars">★★★★★</span></strong><span class="amg-hero-rating-caption">162 Google reviews</span></span>
 </a>
 </div>
-</div>
 </section>
 <style>
-#amg-new-hero{background:#0d1420;display:block;padding:0;min-height:0}
-#amg-new-hero-figure{margin:0;line-height:0}
-#amg-new-hero-figure img{display:block;width:100%;height:auto;max-height:70vh;object-fit:cover}
-#amg-new-hero-copy{padding:44px 6% 52px;max-width:1100px;margin:0}
-#amg-new-hero-copy .amg-hero-eyebrow{color:#8ce9dc;text-transform:uppercase;letter-spacing:.08em;font-weight:700;font-size:.85rem}
-#amg-new-hero-copy h1{font-size:clamp(2.2rem,4.2vw,3.4rem);color:#fff;margin:10px 0 16px;line-height:1.1;font-weight:800}
-#amg-new-hero-copy .amg-hero-description{color:#cbd3df;font-size:1.1rem;max-width:800px;margin:0 0 26px;line-height:1.6}
-#amg-new-hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:18px}
+#amg-new-hero{position:relative;isolation:isolate;min-height:640px;overflow:hidden;background:#0d1420}
+#amg-new-hero-bg{position:absolute;inset:0;z-index:-2}
+#amg-new-hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center center}
+#amg-new-hero:after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#0d1420 0%,#0d1420cc 22%,#0d142088 34%,#0d142000 42%)}
+#amg-new-hero-copy{position:relative;max-width:38%;padding:110px 0 48px 6%}
+#amg-new-hero-copy .amg-hero-eyebrow{color:#8ce9dc;text-transform:uppercase;letter-spacing:.08em;font-weight:700;font-size:.8rem}
+#amg-new-hero-copy h1{font-size:clamp(1.9rem,3vw,2.6rem);color:#fff;margin:10px 0 14px;line-height:1.1;font-weight:800}
+#amg-new-hero-copy .amg-hero-description{color:#dfe5ea;font-size:1rem;margin:0 0 22px;line-height:1.6}
+#amg-new-hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:14px;margin-bottom:18px}
 #amg-new-hero-rating{display:inline-flex;align-items:center;gap:12px;background:#fff;color:#202124;border-radius:8px;padding:10px 16px;text-decoration:none}
 #amg-new-hero-rating .amg-hero-stars{color:#fbbc04;letter-spacing:1px}
 #amg-new-hero-rating .amg-hero-rating-caption{display:block;font-size:12px;color:#5f6368}
-@media(max-width:700px){#amg-new-hero-figure{max-height:240px}}
+@media(max-width:900px){#amg-new-hero-copy{max-width:100%;padding:90px 6% 40px}#amg-new-hero:after{background:linear-gradient(180deg,#0d1420 0%,#0d1420cc 30%,#0d142000 65%)}#amg-new-hero{min-height:520px}}
 </style>
 <!-- ==================== Home-Slider Area (End) ==================== -->
 <!-- ==================== Search-Car Area (Start) ==================== -->
